@@ -1,10 +1,12 @@
 class Bill: 
+  # Class Attribute
+  paid_amount = 0
+
   # Instances Attribute 
   def __init__(self, bill_id, patient, services, total_amount: float) -> None:
     self.bill_id = bill_id
     self.patient = patient 
     self.services = services
-    self.paid_amount = 0
     self.total_amount = total_amount
     self.status = ''
 
