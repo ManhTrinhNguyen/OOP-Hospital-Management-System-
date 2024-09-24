@@ -9,5 +9,3 @@ class Person:
   def __str__(self) -> str: # Represent a Person 
     return f'Name: {self.name}, Age: {self.age}, Gender: {self.gender}, Address: {self.address}'
   
-
-    
