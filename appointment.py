@@ -2,7 +2,7 @@ class Appointment:
   # Instances Attribute
   def __init__(self, appointment_id: int, patient, doctor, date, status='Scheduled') -> None:
     self.appointment_id = appointment_id
-    self.patitent = patient 
+    self.patient = patient 
     self.doctor = doctor 
     self.date = date 
     self.status = status
