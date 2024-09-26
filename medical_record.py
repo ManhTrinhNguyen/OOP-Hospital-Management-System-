@@ -7,4 +7,7 @@ class Medical_Record:
     self.treatment = treatment # The treatment prescribed (string).
     self.date = date # Date of the diagnosis/treatment (datetime object). 
 
+  def __str__(self):
+    return f'Record {self.record_id}: {self.diagnosis} by Dr. {self.doctor.name} on {self.date}. Treatment: {self.treatment}'
+
 
