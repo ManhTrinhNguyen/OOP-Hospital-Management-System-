@@ -19,6 +19,7 @@ class Bill:
       return 'Paid'
     else: 
       self.status = 'Pending'
-      amount_left = self.total_amount - amount
-      print(f'{self.patient} is still have {amount_left} left')
+      self.total_amount = self.total_amount - amount
+
+      print(f'{self.patient} is still have {self.total_amount} left')
       return 'Pending'
